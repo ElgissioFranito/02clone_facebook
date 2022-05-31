@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+}
+
+h1{
+    font-size: 4em;
+    font-family: verdana;
+    color: lightgreen;
+    border: 1px solid ;
+    border-radius: 10px;
+}
+
+.bt{
+    padding: 5% 15%;
+    background-color: black;
+    color: antiquewhite;
+    opacity: 70%;
+    font-size: large;
+}
+.bt:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+    color: black;
+    font-weight: bolder;
+}

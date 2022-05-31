@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+}
+
+#entete{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+}
+
+#facebook{
+    text-align: left;
+    color: rgb(0, 58, 250);
+    font-size: xx-large;
+    font-family: verdana;
+    font-weight: bold;
+}
+table{
+    width: 100%;
+}

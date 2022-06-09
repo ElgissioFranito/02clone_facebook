@@ -1,6 +1,7 @@
 body {
     text-align: center;
     background-color: #131313;
+    overflow-x: hidden;
 }
 
 #entete {
@@ -15,6 +16,7 @@ body {
     font-size: xx-large;
     font-family: verdana;
     font-weight: bold;
+    text-shadow: 2px 5px 20px rgb(50, 50, 219);
 }
 
 #entete p {
@@ -31,13 +33,26 @@ body {
     width: 20%;
     height: 0%;
     justify-content: space-around;
+
 }
 
+
+
 #entete li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: beige;
+    width: 35px;
+    height: 35px;
     background-color: rgb(39, 39, 39);
     padding: 2px 5px;
     border-radius: 50%;
+}
+
+#entete img {
+    width: 25px;
+    height: 25px;
 }
 
 #entete a {
@@ -70,12 +85,13 @@ body {
 /* inserer du text apès le selecteur */
 #entete2 li a.active::after {
     background-color: black;
-    height: 5px;
+    height: 4px;
     width: 300%;
     content: '';
     position: absolute;
-    bottom: -100%;
+    bottom: -75%;
     right: -100%;
+    box-shadow: 0px -8px 13px black;
 
 
 }
@@ -92,11 +108,39 @@ body {
     margin: 10px;
     flex-wrap: nowrap;
     flex-grow: 0;
+    width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+
+#story-section::-webkit-scrollbar {
+    width: 0%;
+}
+
+.monStory {
+    min-width: 160px;
+    height: 260px;
+    margin: 5px 3px;
+    position: relative;
+    cursor: pointer;
+    transition: .3 ease-in;
+    object-fit: cover;
+}
+
+.monStory:hover>img {
+    transform: scale(1.02);
+}
+
+.monStory>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 
 .unStory {
-    width: 160px;
-    height: 240px;
+    min-width: 160px;
+    height: 260px;
     margin: 5px 3px;
     position: relative;
     cursor: pointer;
@@ -111,7 +155,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    /* overflow: hidden; */
+
 
 }
 
@@ -131,11 +175,60 @@ body {
     border-radius: 50%;
 }
 
-.user {
+
+
+.unStory .user {
+
+    font-size: xx-small;
     color: antiquewhite;
     position: absolute;
-    left: 20px;
-    top: 75%;
+    left: 10px;
+    top: 83%;
     text-align: left;
+    font-family: verdana;
+}
+
+.monStory .user {
+    color: antiquewhite;
+    text-align: center;
     font-family: Geneva, Tahoma, sans-serif;
+    position: relative;
+    top: 0%;
+    left: 15%;
+
+
+}
+
+.fond-text {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    width: 160px;
+    height: 85px;
+    background-color: #353535;
+    left: 0px;
+    top: 70%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.fond-text::before {
+    content: " + ";
+    font-size: x-large;
+    font-weight: 800;
+    color: aliceblue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #0a0eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -20%;
+    left: 35%;
+}
+
+.fond-text:hover {
+    transform: scale(1.02);
 }

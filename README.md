@@ -12,9 +12,9 @@ Je vais le cloner en maquête (avec adobeXD), en front-End (avec HTML5, CSS3, si
 # facebook_mobile
 
 ### Voici ce que j'ai déjà accompli 
-![mon_cloning](URL "./maquete.png")
+![mon_cloning](./maquete.png)
 
-Je viens de terminer page d'acceuil facebook (en Html/Css/JS). Je fais pas mal de dynamisme dans la page, mais malheuresement ça ne se voit pas sur l'image, car c'est un capture d'écran. En  tant que développeur web junior, je vais devoir faire encore beaucoup de chémin pour mettre en marche cette appication web.
+Je viens de terminer page d'acceuil facebook (en Html/Css/JS). J'ai fais pas mal de dynamisme dans la page, mais malheuresement ça ne se voit pas sur l'image, car c'est un capture d'écran. En  tant que développeur web junior, je vais devoir faire encore beaucoup de chémin pour mettre en marche cette appication web.
 Je vais pas me décourager pour autant!
 
 Merci pour la lecture.
